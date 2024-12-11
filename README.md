@@ -1,6 +1,6 @@
 # REACT-QUICK-REFERENCE
 
-### Objects in State
+### Objects in State, Setting from Prevstate
 Use state setter callback function when our next value depends on our previous value.
 copy the previous state into the next state like 
 
@@ -15,13 +15,20 @@ This is the Computed Property. Name allows us to use the string value stored by 
 
         [name]: value    
 
-const [currentState, stateSetter] = useState( initialState );
 
-The currentState references the current value of the state and initialState initializes the value of the state for the component’s first render.
+        const [currentState, stateSetter] = useState( initialState );
 
+CurrentState references the states current value 
+initialState initializes the value of the state at first render
+stateSetter - sets the state
+
+### Function Component Effects
 The useEffect() function has no return value as the Effect Hook is used to call another function. We pass the callback function, or effect, to run after a component renders as the argument of the useEffect() function. 
 
-define simple event handlers inline in our JSX and complex event handlers outside of our JSX.
+#### Where to Define Event Handlers 
+
+    Simple event handlers ---> inline in our JSX
+    Complex event handlers ----> outside of our JSX.
 
 
 ### CleanUp effects
