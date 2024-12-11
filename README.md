@@ -1,8 +1,13 @@
 # REACT-QUICK-REFERENCE
 
-### useState, Objects in State, Setting from a Prevstate
+### useState, Objects in State, Setting state from a Prevstate, Initialize State
 
         const [currentState, stateSetter] = useState( initialState );
+        -------------------------------------------------------------
+        Initialize state  
+                         = useState(0)
+                         = useState({object})
+                         = useState(Boolean)
 
 CurrentState references the states current value 
 initialState initializes the value of the state at first render
