@@ -24,15 +24,30 @@ The useEffect() function has no return value as the Effect Hook is used to call 
 define simple event handlers inline in our JSX and complex event handlers outside of our JSX.
 
 
-### Some effects require cleanup
+### CleanUp effects
 
-##### `If useEffect() returns a function, then the Hook always treats that as the cleanup function`
+##### `If useEffect() `returns` a function, then the Hook always treats that as the cleanup function`
 
-useEffect(() => {
-      First Argumet or the EFFECT
-  return () => {
-        Return statement or CLEAN UP is optional
-  };
-}, [ Second Argument or DEPENDENCY - optional ]); 
+    useEffect(() => {
+          First Argumet or the EFFECT
+      return () => {
+            Return statement or CLEAN UP is optional
+      };
+    }, [ Second Argument or DEPENDENCY - optional ]); 
 
 Second Argument is an array which determines when it runs
+
+    
+### Control When Hooks are Called
+The dependency array is used to schedule or configure when our effect is called in the following ways:
+
+        Dependency Array	        Effect called after first render & …
+        undefined	                every re-render
+        Empty array	                no re-renders
+        Non-empty array	            when any value in the dependency array changes
+
+### Fetch of the menu data
+
+    useEffect(() => {
+      get('/menu').then((response) => setMenuItems(response.data));
+    }, []);
