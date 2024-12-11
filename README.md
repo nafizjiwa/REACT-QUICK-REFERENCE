@@ -6,7 +6,9 @@
         -------------------------------------------------------------
         Initialize state  
                          = useState(0)
+                         = useState([array])
                          = useState({object})
+                         = useState([ {obect}, {object}, {object} ])
                          = useState(Boolean)
 
 CurrentState references the states current value <br />
