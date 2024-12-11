@@ -33,5 +33,6 @@ useEffect(() => {
   return () => {
         Return statement or CLEAN UP is optional
   };
-}, [ Second Argument or DEPENDENCY]); 
+}, [ Second Argument or DEPENDENCY - optional ]); 
 
+Second Argument is an array which determines when it runs
