@@ -64,7 +64,7 @@ useEffect(()=>{callback}, [array]);
         ));
 
 ### [name] This is the Computed Property
-Name allows us to use the string value stored by the name variable as a property key. So value = key 
+Name allows us to use the string value stored by the name variable as a property key. So A String Value = key 
 
         [name]: value    
     
