@@ -13,17 +13,18 @@ CurrentState references the states current value <br />
 initialState initializes the value of the state at first render <br />
 stateSetter - sets the state <br />
 
-Use State setter callback function when our next value depends on our previous value.
+Use a State setter callback function when our next value depends on our previous value.
 
 
     setProfile((prev)=> (                 ------ these brackets tells JavaScript that our curly brackets 
                                                         ----- refer to a new object to be returned
-        {...prev,                         ------ ..., the spread operator copies the previous state  
+        {...prev,                         ------ ... `the spread operator` copies the previous state  
                                                         ----- into the new state
-        `[name]`: value}                  ------  overwrites the appropriate key with its updated value
+        `[name]`: value}                  ------  overwrites the appropriate KEY with its updated VALUE
         ));
 
-This is the Computed Property. Name allows us to use the string value stored by the name variable as a property key.
+This is the Computed Property [name]. <br />
+Name allows us to use the string value stored by the name variable as a property key. So value = key 
 
         [name]: value    
 
