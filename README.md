@@ -4,8 +4,10 @@
 Use state setter callback function when our next value depends on our previous value.
 copy the previous state into the next state like 
 
-    setProfile((prev)=> (                 ------ these brackets tells JavaScript that our curly brackets refer to a new object to be returned
-        {...prev,                         ------ ..., the spread operator fills in the corresponding fields from our previous state
+    setProfile((prev)=> (                 ------ these brackets tells JavaScript that our curly brackets 
+                                                        ----- refer to a new object to be returned
+        {...prev,                         ------ ..., the spread operator fills in the corresponding 
+                                                        ----- fields from our previous state
         `[name]`: value}                  ------  overwrites the appropriate key with its updated value
         ));
 
