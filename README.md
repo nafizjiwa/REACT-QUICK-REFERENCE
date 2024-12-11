@@ -4,16 +4,14 @@
 Use state setter callback function when our next value depends on our previous value.
 copy the previous state into the next state like 
 
-setProfile((prev)=> (
-    {...prev, `[name]`: value}
-    ));
+    setProfile((prev)=> (                 ------ these brackets tells JavaScript that our curly brackets refer to a new object to be returned
+        {...prev,                         ------ ..., the spread operator fills in the corresponding fields from our previous state
+        `[name]`: value}                  ------  overwrites the appropriate key with its updated value
+        ));
 
-    
-This tells JavaScript that our curly brackets refer to a new object to be returned. We use ..., the spread operator, to fill in the corresponding fields from our previous state. Finally, we overwrite the appropriate key with its updated value.
+    [name]: value
 
-[name]: value
-
-Thisis the Computed Property. Name allows us to use the string value stored by the name variable as a property key.
+This is the Computed Property. Name allows us to use the string value stored by the name variable as a property key.
 
 const [currentState, stateSetter] = useState( initialState );
 
