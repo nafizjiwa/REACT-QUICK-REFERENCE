@@ -68,3 +68,5 @@ useEffect(()=>{callback}, [array]);
     useEffect(() => {
       get('/menu').then((response) => setMenuItems(response.data));
     }, []);
+    
+setText('') to clear a text box
