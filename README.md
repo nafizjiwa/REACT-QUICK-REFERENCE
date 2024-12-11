@@ -5,7 +5,7 @@ Use state setter callback function when our next value depends on our previous v
 copy the previous state into the next state like 
 
 setProfile((prev)=> (
-    {...prev, [name]: value}
+    {...prev, `[name]`: value}
     ));
 
     
