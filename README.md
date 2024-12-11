@@ -86,4 +86,6 @@ A helper function to remove a specific id would look something like the followin
                                                                  eachArrayValueSpecific.id !== idToRemove));
       };
 
+### Passing Props
 
+removeThought={removeThought}
