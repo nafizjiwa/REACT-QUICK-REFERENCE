@@ -13,12 +13,25 @@ This tells JavaScript that our curly brackets refer to a new object to be return
 
 [name]: value
 
-This Computed Property Name allows us to use the string value stored by the name variable as a property key.
+Thisis the Computed Property. Name allows us to use the string value stored by the name variable as a property key.
 
 const [currentState, stateSetter] = useState( initialState );
 
 The currentState references the current value of the state and initialState initializes the value of the state for the component’s first render.
 
-State setters can be called in event handlers.
+The useEffect() function has no return value as the Effect Hook is used to call another function. We pass the callback function, or effect, to run after a component renders as the argument of the useEffect() function. 
 
 define simple event handlers inline in our JSX and complex event handlers outside of our JSX.
+
+
+### Some effects require cleanup
+
+##### `If useEffect() returns a function, then the Hook always treats that as the cleanup function`
+
+useEffect(() => {
+      First Argumet or the EFFECT
+  return () => {
+        Return statement or CLEAN UP is optional
+  };
+}, [ Second Argument or DEPENDENCY]); 
+
