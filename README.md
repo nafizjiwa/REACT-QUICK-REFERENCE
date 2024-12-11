@@ -75,3 +75,12 @@ To set an input box in REACT with an initial value of empty set the variable wit
 to reset the input box back to an empty space use the set function.
         
         setText('') to clear a text box
+
+
+A helper function to remove a specific id would look something like the following code:
+
+const removeId = (`idToRemove`) => {
+  setThoughts((passInArrayWithIds) => ArrayWithIds.filter((eachArrayValue) => eachArrayValueSpecific.id !== `idToRemove`));
+};
+
+
