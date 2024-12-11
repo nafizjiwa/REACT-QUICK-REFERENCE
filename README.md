@@ -43,17 +43,18 @@ The useEffect() function has no return value as the Effect Hook is used to call 
 ##### If useEffect() `returns` a function, then the Hook always treats that as the cleanup function
 
     useEffect(() => {
-          First Argumet or the EFFECT
+          First Argument or the (EFFECT)
       return () => {
-            Return statement or CLEAN UP is optional
+            Return statement or (CLEAN UP) is optional
       };
     }, [ Second Argument or DEPENDENCY - optional ]); 
 
-Second Argument is an array which determines when it runs
+Second Argument is an array which determines when the effect runs
 
     
 ### Control When Hooks are Called
-The dependency array is used to schedule or configure when our effect is called in the following ways:
+Dependency array is used to schedule or configure when our effect is called in the following ways:
+useEffect(()=>{callback}, [array]);
 
         Dependency Array	        Effect called after first render & …
         undefined	                every re-render
