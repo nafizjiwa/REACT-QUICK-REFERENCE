@@ -69,4 +69,9 @@ useEffect(()=>{callback}, [array]);
       get('/menu').then((response) => setMenuItems(response.data));
     }, []);
     
-setText('') to clear a text box
+To set an input box in REACT with an initial value of empty set the variable with useState
+
+        const `[ text, setText ]`= useState('') this creates a state with an initial of empty space
+to reset the input box back to an empty space use the set function.
+        
+        setText('') to clear a text box
