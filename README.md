@@ -9,9 +9,9 @@ copy the previous state into the next state like
         `[name]`: value}                  ------  overwrites the appropriate key with its updated value
         ));
 
-    [name]: value
-
 This is the Computed Property. Name allows us to use the string value stored by the name variable as a property key.
+
+        [name]: value    
 
 const [currentState, stateSetter] = useState( initialState );
 
