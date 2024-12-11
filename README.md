@@ -9,9 +9,9 @@
                          = useState({object})
                          = useState(Boolean)
 
-CurrentState references the states current value 
-initialState initializes the value of the state at first render
-stateSetter - sets the state
+CurrentState references the states current value <br />
+initialState initializes the value of the state at first render <br />
+stateSetter - sets the state <br />
 
 Use State setter callback function when our next value depends on our previous value.
 
