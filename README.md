@@ -77,10 +77,11 @@ to reset the input box back to an empty space use the set function.
         setText('') to clear a text box
 
 
+<br />
 A helper function to remove a specific id would look something like the following code:
 
-const functionToRemoveId = (`idToRemove`) => {
-  setterFunction((passInArrayWithIds) => ArrayWithIds.filter((eachArrayValue) => eachArrayValueSpecific.id !== `idToRemove`));
-};
+        const functionToRemoveId = (`idToRemove`) => {
+          setterFunction((passInArrayWithIds) => ArrayWithIds.filter((eachArrayValue) => eachArrayValueSpecific.id !== `idToRemove`));
+        };
 
 
