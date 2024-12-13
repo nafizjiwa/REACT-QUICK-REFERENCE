@@ -112,7 +112,7 @@ function Child(props){
 #### ACCEPTING A PROP IN A FEW WAYs:
 
 | Methods | An Example in Function |How used its used in Function | Description |
-| --------- | ---------- | ---------- | ---------- |
+|:--------- | ---------- | ---------- | ---------- |
 | Accept props in the delcaration  |functionName(props) { }|  props.propertyName | Then use required properties in the function|
 | Destructure in the function delclaration  | functionName({propertyName}) { } | propertyName | Then use just propteryName anywhere in function|
 | Destructure within the function  | functionName(props) { } | const { propertyName } =props | Then once destructured use propertyName anywhere |
