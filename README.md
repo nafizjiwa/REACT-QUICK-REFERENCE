@@ -4,12 +4,12 @@
 
         const [currentState, stateSetter] = useState( initialState );
         -------------------------------------------------------------
-        Initialize state  
-                         = useState(0)
-                         = useState([array])
-                         = useState({object})
-                         = useState([ {obect}, {object}, {object} ])
-                         = useState(Boolean)
+        InitialState  
+                         = (0)
+                         = ([array])
+                         = ({object})
+                         = ([ {obect}, {object}, {object} ])
+                         = (Boolean)
 
 CurrentState references the states current value <br />
 initialState initializes the value of the state at first render <br />
