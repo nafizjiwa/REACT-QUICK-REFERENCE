@@ -118,14 +118,18 @@ function Child(props){
 | Destructure within the function  | functionName(props) { } | const { propertyName } =props | Then once destructured use propertyName anywhere ||
 
 ### STYLING
+
 #### INLINE STYLING:
+
 <h1 style={{color: "red"}}> Hello, World! </h1>
 
 #### OBJECT VARIABLE
+
 const myStyle = { color: "red" }
 <h1 style={myStyle}> Hello, World! </h1>
 
 #### MULTIPLE STYLE SHEETS
+
 import './App.css'
 import './Style.css'
 
