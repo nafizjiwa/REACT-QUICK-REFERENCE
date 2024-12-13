@@ -93,9 +93,13 @@ removeThought={removeThought}
 
         function ParentComponent(){
                 return (
-                        <ChildComponent propertyName=`{nameOfFunctionPassedDown}` />
+                        <ChildComponent 
+                                propertyName=`{ nameOfFunctionPassedDown }`
                                         -passing this function allows us to use it
                                         - in the Child component
+                                clickHandler = { clickHandlerFunction }
+                                propertyName = `{nameOfPropertyPassedDown}`
+                        />
                 )
         }
 
@@ -104,7 +108,12 @@ removeThought={removeThought}
         function Child(props){
                 return (
                       <div>
-                        <Child `src={src}` />
+                        <img 
+                        src=`{props.src}`
+                        />
+                        <button onClick={props.clickHandler}>
+                                Click Me
+                        </button>
                       </div>
                 );
         }
