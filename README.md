@@ -121,12 +121,12 @@ function Child(props){
 
 #### INLINE STYLING:
 
-<h1 style={{color: "red"}}> Hello, World! </h1>
+`<h1 style={{color: "red"}}> Hello, World! </h1>`
 
 #### OBJECT VARIABLE
 
 const myStyle = { color: "red" }
-<h1 style={myStyle}> Hello, World! </h1>
+`<h1 style={myStyle}> Hello, World! </h1>`
 
 #### MULTIPLE STYLE SHEETS
 
