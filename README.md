@@ -99,7 +99,7 @@ function ParentComponent(){
         )
 }
 
-`Child.js file` child uses the function or displays something on screen
+`Child.js file` child uses the function or displays something on screen <br/>
 
 function Child(props){
         return (
@@ -121,17 +121,17 @@ function Child(props){
 
 #### INLINE STYLING:
 
-`<h1 style={{color: "red"}}> Hello, World! </h1>`
+`<h1 style={{color: "red"}}> Hello, World! </h1>` <br/>
 
 #### OBJECT VARIABLE
 
-const myStyle = { color: "red" }
-`<h1 style={myStyle}> Hello, World! </h1>`
+const myStyle = { color: "red" } <br/>
+`<h1 style={myStyle}> Hello, World! </h1>` <br/>
 
 #### MULTIPLE STYLE SHEETS
 
-import './App.css'
-import './Style.css'
+import './App.css' <br/>
+import './Style.css' <br/>
 
 When multiple style sheet cause a clash with className we can use a module
 
@@ -141,7 +141,7 @@ Import it as a module, the stylesare available to the component that imported th
 Then create unique class names for each module.
 Then some class names we’ve used across stylesheets.
 
--> fileName is the name of the component you’re styling:
+-> fileName is the name of the component you’re styling: <br/>
 fileName.module.css---so the css for the file `fileName` is found in a file only for itself not in a common style.css file
 not
 style.css
