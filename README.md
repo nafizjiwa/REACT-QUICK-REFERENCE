@@ -86,9 +86,33 @@ To reset an input box back to an empty space use the set function.
                                                                  eachArrayValueSpecific.id !== idToRemove));
       };
 
-### Passing Props
-
 removeThought={removeThought}
+
+### Passing Props
+`App.js file`
+
+function ParentComponent(){
+        return (
+                <ChildComponent propertyName=`{nameOfFunctionPassedDown}` />
+                                -passing this function allows us to use it
+                                - in the Child component
+        )
+}
+
+`Child.js file` child uses the function or displays something on screen
+
+function Child(props){
+        return (
+              <div>
+                <Child `src={src}` />
+              </div>
+        );
+}
+ACCEPTING A PROP IN A FEW WAYs;
+
+props -> props.propertyName
+props -> {propertyName}
+props -> const { propertyName } =props
 
 
 
