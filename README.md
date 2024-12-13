@@ -111,9 +111,9 @@ function Child(props){
 
 #### ACCEPTING A PROP IN A FEW WAYs:
 
-| Methods | An Example in Function |How used its used in Function | Description | Exampl |
-|:--------- | ---------- | ---------- | ---------- |
-| Accept props in the delcaration  |functionName(props) { }|  props.propertyName | Then use required properties in the function||
+| Methods | An Example in Function |How used its used in Function | Description | Example |
+|:--------- | ---------- | ---------- | ---------- |---------- |
+| Accept props in the delcaration  |functionName(props) { } |  props.propertyName | Then use required properties in the function||
 | Destructure in the function delclaration  | functionName({propertyName}) { } | propertyName | Then use just propteryName anywhere in function||
 | Destructure within the function  | functionName(props) { } | const { propertyName } =props | Then once destructured use propertyName anywhere ||
 
@@ -132,6 +132,7 @@ import './Style.css'
 When multiple style sheet cause a clash with className we can use a module
 
 #### CSS MODULE FILE
+
 Import it as a module, the stylesare available to the component that imported the style.
 Then create unique class names for each module.
 Then some class names we’ve used across stylesheets.
@@ -143,10 +144,10 @@ style.css
 
 import styles from `"./App.module.css";` --- go to file App.module.css to get the styles for App and store in styles object
 
-function App() {
-  return (
-        <>
-              <div className={styles.Wrapper}> {objectName.className}
-        </>
+        function App() {
+          return (
+                <>
+                      <div className={styles.Wrapper}> {objectName.className}
+                </>
 
 
