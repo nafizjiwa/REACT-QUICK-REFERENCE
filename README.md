@@ -151,7 +151,7 @@ Here the parent App sends 2 properties to Banner component </br>
 
 #### ACCEPTING A PROP IN A FEW WAYs:
 
-| Methods | An Example in Function |How used its used in Function | Description | Example |
+| Methods | An Example in Function |How its used in Function | Description | Example |
 |:--------- | ---------- | ---------- | ---------- |---------- |
 | Accept props as parmeters  |functionName(props) { } |  props.propertyName | Then use required properties in the function||
 | Destructure ojbect with properites as parameters  | functionName({propertyName}) { } | propertyName | Then use just propteryName anywhere in function||
