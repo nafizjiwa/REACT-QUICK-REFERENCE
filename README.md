@@ -109,6 +109,37 @@ removeThought={removeThought}
                 );
         }
 
+### Passing a function as a prop:
+clickHandler is a function passed from parent (App)  to child (Banner) </br>
+The child destructures the values name and clickHandler from props object </br>
+
+        const Banner = ({ name, clickHandler }) => {
+          return (
+            <div>
+              <p>Hello {name}</p>
+              <button onClick={clickHandler}>Click Me</button>
+            </div>
+          )
+        }
+Here the parent App sends 2 properties to Banner component </br>
+1. The property name as Jason
+2. The property clickHandler as the function showAlert
+
+        function App() {
+          function showAlert (){
+           alert("Welcome!")
+          }
+          //const showAlert = () => {
+          //  alert("Welcome!")
+          // }
+        
+          return (
+            <div>
+              <Banner name="Jason" clickHandler={showAlert} />
+            </div>
+          )
+        }
+
 #### ACCEPTING A PROP IN A FEW WAYs:
 
 | Methods | An Example in Function |How used its used in Function | Description | Example |
