@@ -153,9 +153,9 @@ Here the parent App sends 2 properties to Banner component </br>
 
 | Methods | An Example in Function |How used its used in Function | Description | Example |
 |:--------- | ---------- | ---------- | ---------- |---------- |
-| Accept props in the delcaration  |functionName(props) { } |  props.propertyName | Then use required properties in the function||
-| Destructure in the function delclaration  | functionName({propertyName}) { } | propertyName | Then use just propteryName anywhere in function||
-| Destructure within the function  | functionName(props) { } | const { propertyName } =props | Then once destructured use propertyName anywhere ||
+| Accept props as parmeters  |functionName(props) { } |  props.propertyName | Then use required properties in the function||
+| Destructure ojbect with properites as parameters  | functionName({propertyName}) { } | propertyName | Then use just propteryName anywhere in function||
+| Destructure properties within the function  | functionName(props) { } | const { propertyName } =props | Then once destructured use propertyName anywhere ||
 
 ### STYLING
 
