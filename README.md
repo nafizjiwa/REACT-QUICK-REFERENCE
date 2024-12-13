@@ -91,23 +91,23 @@ removeThought={removeThought}
 ### Passing Props
 `App.js file`
 
-function ParentComponent(){
-        return (
-                <ChildComponent propertyName=`{nameOfFunctionPassedDown}` />
-                                -passing this function allows us to use it
-                                - in the Child component
-        )
-}
+        function ParentComponent(){
+                return (
+                        <ChildComponent propertyName=`{nameOfFunctionPassedDown}` />
+                                        -passing this function allows us to use it
+                                        - in the Child component
+                )
+        }
 
 `Child.js file` child uses the function or displays something on screen <br/>
 
-function Child(props){
-        return (
-              <div>
-                <Child `src={src}` />
-              </div>
-        );
-}
+        function Child(props){
+                return (
+                      <div>
+                        <Child `src={src}` />
+                      </div>
+                );
+        }
 
 #### ACCEPTING A PROP IN A FEW WAYs:
 
