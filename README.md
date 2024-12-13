@@ -108,11 +108,16 @@ function Child(props){
               </div>
         );
 }
-ACCEPTING A PROP IN A FEW WAYs;
 
-props -> props.propertyName
-props -> {propertyName}
-props -> const { propertyName } =props
+#### ACCEPTING A PROP IN A FEW WAYs:
+
+| Methods | An Example in Function |How used its used in Function | 
+| --------- | ---------- | ---------- |
+| Accept props in the delcaration and use required properties in the function  |functionName(props) { }|  props.propertyName |
+| Destructure in the function delclaration  | functionName({propertyName}) { } | propertyName |
+| Destructure within the function  | functionName(props) { } | const { propertyName } =props |
+
+
 
 
 
