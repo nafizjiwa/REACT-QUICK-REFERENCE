@@ -111,13 +111,42 @@ function Child(props){
 
 #### ACCEPTING A PROP IN A FEW WAYs:
 
-| Methods | An Example in Function |How used its used in Function | Description |
+| Methods | An Example in Function |How used its used in Function | Description | Exampl |
 |:--------- | ---------- | ---------- | ---------- |
-| Accept props in the delcaration  |functionName(props) { }|  props.propertyName | Then use required properties in the function|
-| Destructure in the function delclaration  | functionName({propertyName}) { } | propertyName | Then use just propteryName anywhere in function|
-| Destructure within the function  | functionName(props) { } | const { propertyName } =props | Then once destructured use propertyName anywhere |
+| Accept props in the delcaration  |functionName(props) { }|  props.propertyName | Then use required properties in the function||
+| Destructure in the function delclaration  | functionName({propertyName}) { } | propertyName | Then use just propteryName anywhere in function||
+| Destructure within the function  | functionName(props) { } | const { propertyName } =props | Then once destructured use propertyName anywhere ||
 
+### STYLING
+#### INLINE STYLING:
+<h1 style={{color: "red"}}> Hello, World! </h1>
 
+#### OBJECT VARIABLE
+const myStyle = { color: "red" }
+<h1 style={myStyle}> Hello, World! </h1>
 
+#### MULTIPLE STYLE SHEETS
+import './App.css'
+import './Style.css'
+
+When multiple style sheet cause a clash with className we can use a module
+
+#### CSS MODULE FILE
+Import it as a module, the stylesare available to the component that imported the style.
+Then create unique class names for each module.
+Then some class names we’ve used across stylesheets.
+
+-> fileName is the name of the component you’re styling:
+fileName.module.css---so the css for the file `fileName` is found in a file only for itself not in a common style.css file
+not
+style.css
+
+import styles from `"./App.module.css";` --- go to file App.module.css to get the styles for App and store in styles object
+
+function App() {
+  return (
+        <>
+              <div className={styles.menuWrapper}>
+        </>
 
 
