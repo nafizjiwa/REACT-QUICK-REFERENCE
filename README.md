@@ -185,12 +185,12 @@ When multiple style sheet cause a clash with className use a MODULE FILE
 
 #### CSS MODULE FILE
 
-Importing as a module, the styles are available to the component that imported the styles.
-We can create unique class names for each module.
-We can a general class names across stylesheets.
+Importing as a module, the styles are available to the component that imported the styles.<br/>
+We can create unique class names for each module.<br/>
+We can a general class names across stylesheets.<br/>
 
--> SYNTAX
-fileName.module.css
+-> SYNTAX<br/>
+fileName.module.css<br/>
 ---> so the css STYLES are found in a file which is `fileName` not in a common stylesheet style.css file<br/>
 -> fileName is usually the name of the component you’re styling: <br/>
 
