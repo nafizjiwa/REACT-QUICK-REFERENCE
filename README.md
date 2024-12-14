@@ -163,9 +163,17 @@ Here the parent App sends 2 properties to Banner component </br>
 
 `<h1 style={{color: "red"}}> Hello, World! </h1>` <br/>
 
+Double curly braces to inject a JavaScript object literal into JSX. 
+{first curlies inidcate insertion of JavaScript into JSX}
+{{second curlies signal an object literal injected into JSX }}
+
 #### OBJECT VARIABLE
 
-const myStyle = { color: "red" } <br/>
+Define object variable styles with name myStyle ->
+const myStyle = { <br/>
+color: "red" <br/> 
+} <br/>
+- To apply the styles:
 `<h1 style={myStyle}> Hello, World! </h1>` <br/>
 
 #### MULTIPLE STYLE SHEETS
@@ -193,5 +201,6 @@ import styles from `"./App.module.css";` --- go to file App.module.css to get th
                 <>
                       <div className={styles.Wrapper}> {objectName.className}
                 </>
+
 
 
