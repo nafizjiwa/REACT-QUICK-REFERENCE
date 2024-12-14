@@ -181,22 +181,22 @@ color: "red" <br/>
 import './App.css' <br/>
 import './Style.css' <br/>
 
-When multiple style sheet cause a clash with className we can use a module
+When multiple style sheet cause a clash with className use a MODULE FILE
 
 #### CSS MODULE FILE
 
-Import it as a module, the stylesare available to the component that imported the style.
-Then create unique class names for each module.
-Then some class names we’ve used across stylesheets.
+Importing as a module, the styles are available to the component that imported the styles.
+We can create unique class names for each module.
+We can a general class names across stylesheets.
 
--> fileName is the name of the component you’re styling: <br/>
-fileName.module.css---so the css for the file `fileName` is found in a file only for itself not in a common style.css file
-not
-style.css
+-> SYNTAX
+fileName.module.css
+---> so the css STYLES are found in a file which is `fileName` not in a common stylesheet style.css file<br/>
+-> fileName is usually the name of the component you’re styling: <br/>
 
 import styles first like from `"./App.module.css";` --- go to file App.module.css to get the styles for App and store in a styles object
 
-        import styles from "./App.module.css"; ---> styles is object
+        import styles from "./App.module.css"; ---> styles is the created object
 
         function App() {
           return (
