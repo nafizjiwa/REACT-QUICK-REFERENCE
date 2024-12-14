@@ -194,7 +194,9 @@ fileName.module.css---so the css for the file `fileName` is found in a file only
 not
 style.css
 
-import styles from `"./App.module.css";` --- go to file App.module.css to get the styles for App and store in styles object
+import styles first like from `"./App.module.css";` --- go to file App.module.css to get the styles for App and store in a styles object
+
+        import styles from "./App.module.css"; ---> styles is object
 
         function App() {
           return (
