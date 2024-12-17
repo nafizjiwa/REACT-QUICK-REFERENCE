@@ -4,16 +4,15 @@
 
         const [currentState, stateSetter] = useState( initialState );
         -------------------------------------------------------------
-        InitialState  
-                         = (0)
+        InitialState     = (0)
                          = ([array])
                          = ({object})
-                         = ([ {obect}, {object}, {object} ])
+                         = ([ array: {obect}, {object}, {object} ])
                          = (Boolean)
 
-CurrentState references the states current value <br />
-initialState initializes the value of the state at first render <br />
-stateSetter - sets the state <br />
+CurrentState - current state value <br />
+initialState - initializes the VALUE of the state at first render <br />
+stateSetter - Funciton changes state <br />
 
 ### Function Component Effects
 The useEffect() function has no return value as the Effect Hook is used to call another function. We pass the callback function, or effect, to run after a component renders as the argument of the useEffect() function. 
@@ -171,9 +170,9 @@ Double curly braces to inject a JavaScript object literal into JSX.
 #### OBJECT VARIABLE
 
 Define object variable styles with name myStyle ->
-const myStyle = { <br/>
-color: "red" <br/> 
-} <br/>
+        const myStyle = { 
+                        color: "red" 
+                } 
 - To apply the styles:
 `<h1 style={myStyle}> Hello, World! </h1>` <br/>
 
@@ -182,7 +181,7 @@ color: "red" <br/>
 import './App.css' <br/>
 import './Style.css' <br/>
 
-When multiple style sheet cause a clash with className use a MODULE FILE
+Multiple style sheets can cause a clash with className so use a MODULE FILE
 
 #### CSS MODULE FILE
 
