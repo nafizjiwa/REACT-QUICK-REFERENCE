@@ -120,7 +120,8 @@ removeThought={removeThought}
 
 ### Passing a function as a prop:
 clickHandler is a function passed from parent (App)  to child (Banner) </br>
-The child destructures the values name and clickHandler from props object </br>
+The child destructures the values name prop and clickHandler function from the props object </br>
+Destructuring unpacks values from arrays, or properties from objects, into distinct variables. </br>
 
         const Banner = ({ name, clickHandler }) => {
           return (
