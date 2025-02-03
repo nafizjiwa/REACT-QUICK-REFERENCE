@@ -1,5 +1,46 @@
 # REACT-QUICK-REFERENCE
+### Forms: Inputs and Labels
 
+#### Displaying `inputs` of different types 1st render an <input> component. By default its type is text.<br/>
+
+        PASS --> type="checkbox" for a checkbox
+             --> type="radio" for a radio button
+
+      <label>
+        Text input: <input name="myInput" />
+      </label>
+      <label>
+        Checkbox: <input type="checkbox" name="myCheckbox" />
+      </label>
+      <p>
+        Radio buttons:
+        <label>
+          <input type="radio" name="myRadio" value="option1" />
+          Option 1
+        </label>
+      </p>
+      
+#### Typically Nested, <input> is placed inside a <label> tag. Notifies to the browser their association so the browser focuses on the input when the user clicks the label. <br/>
+*Important for the screen reader so it can focums on the input.<br/>
+
+#### Not Nested then associate an <input> and a <label> using the same value for ID and HTMLFOR<br/>
+
+        <input id ={ageInput} > and <label htmlFor={ageInput}>. 
+
+#### To Specify an Initial Value for an input use 
+        
+        defaultValue="Some initial value"
+#### To Read the input values when submitting a form
+
+        Add a <form> around <inputs/> with a <button type="submit">Submit form</button> inside. <br/>
+It will call your <form onSubmit> event handler (here it is handleSubmit). 
+
+        --> <form method="post" onSubmit={handleSubmit}>
+Browser default is to send the form data to the current URL and refresh the page.
+To override this behavior call 
+                e.preventDefault().
+
+              
 ### useState, Objects in State, Setting state from a Prevstate, Initialize State
 
         const [currentState, stateSetter] = useState( initialState );
