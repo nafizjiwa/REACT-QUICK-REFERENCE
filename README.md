@@ -33,7 +33,7 @@
 #### To Read the input values when submitting a form
 
         Add a <form> around <inputs/> with a <button type="submit">Submit form</button> inside. <br/>
-It will call your <form onSubmit> event handler (here it is handleSubmit). 
+It will call your `<form onSubmit>` event handler (here it is handleSubmit). 
 
         --> <form method="post" onSubmit={handleSubmit}>
 Browser default is to send the form data to the current URL and refresh the page.
