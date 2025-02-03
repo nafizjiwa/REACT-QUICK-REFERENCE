@@ -38,7 +38,8 @@ It will call your `<form onSubmit>` event handler (here it is handleSubmit).
         --> <form method="post" onSubmit={handleSubmit}>
 Browser default is to send the form data to the current URL and refresh the page.
 To override this behavior call 
-                e.preventDefault().
+
+                --> e.preventDefault().
 
               
 ### useState, Objects in State, Setting state from a Prevstate, Initialize State
