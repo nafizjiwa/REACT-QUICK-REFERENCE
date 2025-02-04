@@ -1,5 +1,5 @@
 # REACT-QUICK-REFERENCE
-### Forms: Inputs <input> and Labels <label>
+### Forms: Inputs `<input>` and Labels `<label>`
 
 #### To Display `inputs` of different types change type value which by default its text.<br/>
 
@@ -20,10 +20,10 @@
         </label>
       </p>
       
-#### Inputs typically Nested, <input> is placed inside a <label> tag. Notifies to the browser their association so the browser focuses on the input when the user clicks the label. <br/>
+#### Inputs typically are Nested, <input> inside a <label> tag. Notifies to the browser their association so when a label is clicked on the browser focuses on the input. <br/>
 *Important for the screen reader so it can focums on the input.<br/>
 
-#### If Not Nested we associate an <input> and a <label> using the same value for `id` and `htmlFor` <br/>
+#### If Not Nested we associate <input> and <label> with the same value for `id` and `htmlFor` <br/>
 
         <input id ={ageInput} > and <label htmlFor={ageInput}>. 
 
@@ -32,10 +32,13 @@
         defaultValue="Some initial value"
 #### To Read the input values when submitting a form
 
-        Add a <form> around <inputs/> with a <button type="submit">Submit form</button> inside. <br/>
-It will call your `<form onSubmit>` event handler (here it is handleSubmit). 
+        Add a <form> around <inputs/> within the form add a submit button
+                <button type="submit">Submit form</button>. 
+                
+The button will call the `<form onSubmit>` event handler (below example it is handleSubmit). 
 
         --> <form method="post" onSubmit={handleSubmit}>
+            </form>
 Browser default is to send the form data to the current URL and refresh the page.
 To override this behavior call 
 
