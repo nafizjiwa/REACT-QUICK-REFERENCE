@@ -1,10 +1,10 @@
 # REACT-QUICK-REFERENCE
 ### Forms: Inputs and Labels
 
-#### Displaying `inputs` of different types 1st render an <input> component. By default its type is text.<br/>
+#### To Display `inputs` of different types change type value which by default its text.<br/>
 
-        PASS --> type="checkbox" for a checkbox
-             --> type="radio" for a radio button
+        VALUE --> type="checkbox" for a checkbox
+              --> type="radio" for a radio button
 
       <label>
         Text input: <input name="myInput" />
@@ -20,7 +20,7 @@
         </label>
       </p>
       
-#### Typically Nested, <input> is placed inside a <label> tag. Notifies to the browser their association so the browser focuses on the input when the user clicks the label. <br/>
+#### Inputs typically Nested, <input> is placed inside a <label> tag. Notifies to the browser their association so the browser focuses on the input when the user clicks the label. <br/>
 *Important for the screen reader so it can focums on the input.<br/>
 
 #### If Not Nested we associate an <input> and a <label> using the same value for `id` and `htmlFor` <br/>
