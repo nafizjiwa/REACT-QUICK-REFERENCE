@@ -23,7 +23,7 @@
 #### Typically Nested, <input> is placed inside a <label> tag. Notifies to the browser their association so the browser focuses on the input when the user clicks the label. <br/>
 *Important for the screen reader so it can focums on the input.<br/>
 
-#### Not Nested then associate an <input> and a <label> using the same value for ID and HTMLFOR<br/>
+#### If Not Nested we associate an <input> and a <label> using the same value for `id` and `htmlFor` <br/>
 
         <input id ={ageInput} > and <label htmlFor={ageInput}>. 
 
