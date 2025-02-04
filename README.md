@@ -1,7 +1,7 @@
 # REACT-QUICK-REFERENCE
-### Forms: Inputs `<input>` and Labels `<label>`
+### REACT FORMS: Inputs `<input>` and Labels `<label>`
 
-#### To Display `inputs` of different types change type value which by default its text.<br/>
+#### TYPES OF INPUTS. Change the type by changing the type's value which by default its text.<br/>
 
         VALUE --> type="checkbox" for a checkbox
               --> type="radio" for a radio button
