@@ -1,5 +1,5 @@
 # REACT-QUICK-REFERENCE
-### Forms: Inputs and Labels
+### Forms: Inputs <input> and Labels <label>
 
 #### To Display `inputs` of different types change type value which by default its text.<br/>
 
