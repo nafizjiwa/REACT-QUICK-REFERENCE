@@ -20,7 +20,7 @@
         </label>
       </p>
       
-#### Inputs typically are NESTED, `<input/>` inside a `<label> <input/> </label>` tag. Notifies to the browser the tags association, so when a label is clicked the browser focuses on associated input. <br/>
+#### Inputs typically are NESTED, `<input/>` inside a `<label> <input/> </label>` tag. Notifies to the browser the tags are associated, so when a label is clicked the browser focuses on associated input. <br/>
 
         *Important for the screen reader so it can focums on the input.<br/>
 
