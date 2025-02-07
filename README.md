@@ -20,10 +20,11 @@
         </label>
       </p>
       
-#### Inputs typically are Nested, `<input>` inside a `<label>` tag. Notifies to the browser the tags association, so when a label is clicked the browser focuses on associated input. <br/>
-*Important for the screen reader so it can focums on the input.<br/>
+#### Inputs typically are NESTED, `<input>` inside a `<label>` tag. Notifies to the browser the tags association, so when a label is clicked the browser focuses on associated input. <br/>
 
-#### If Not Nested we associate <input> and <label> with the same value for `id` and `htmlFor` <br/>
+        *Important for the screen reader so it can focums on the input.<br/>
+
+#### If NOT NESTED we associate <input> and <label> with the same value for `id` and `htmlFor` <br/>
 
         <input id ={ageInput} > and <label htmlFor={ageInput}>. 
 
