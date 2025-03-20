@@ -15,10 +15,10 @@ Change the type with its value. Text is default value.<br/>
       </label>
       <p>
         Radio buttons:
-        <label>
-          <input type="radio" name="myRadio" value="option1" />
-          Option 1
-        </label>
+            <label>
+               <input type="radio" name="myRadio" value="option1" />
+                 Option 1
+            </label>
       </p>
       
 #### Inputs typically are NESTED, `<input/>` inside a `<label> <input/> </label>` tag. Notifies to the browser the tags are associated, so when a label is clicked the browser focuses on associated input. <br/>
