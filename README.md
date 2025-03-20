@@ -52,11 +52,11 @@ To override this behavior call
               
 ### useState, Objects in State, Setting state from a Prevstate, Initialize State
 
-        const [currentState, stateSetter] = useState( initialState );              InitialState  = (0)
-                                                                                                 = ([array])
-                                                                                                 = ({object})
-                                                                                                 = ([ array: {obect}, {object}, {object} ])
-                                                                                                 = (Boolean)
+        const [currentState, stateSetter] = useState( initialState );          InitialState  = (0)
+                                                                                             = ([array])
+                                                                                             = ({object})
+                                                                                             = ([ array: {obect}, {object}, {object} ])
+                                                                                             = (Boolean)
 
 currentState - current state value <br />
 initialState - initializes the VALUE of the state at first render <br />
