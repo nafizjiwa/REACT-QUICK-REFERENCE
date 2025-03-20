@@ -21,25 +21,28 @@ Change the type with its value. Text is default value.<br/>
             </label>
       </p>
       
-#### Inputs typically are NESTED, `<input/>` inside a `<label> <input/> </label>` tag. Notifies to the browser the tags are associated, so when a label is clicked the browser focuses on associated input. <br/>
+#### NOTICE ABOVE: Inputs typically are NESTED, in labels `<input/>` --> `<label> <input/> </label>` tag.<br/>
+Notifies the browser these tags are associated, when the label is clicked the browser focuses on the associated input. <br/>
 
-        *Important for the screen reader so it can focums on the input.<br/>
+        *Important for the screen reader so it can focus on the input.<br/>
 
-#### If NOT NESTED we associate <input> and <label> with the same value for `id` and `htmlFor` <br/>
+#### If NOT NESTED we associate <input> and <label> with the same value for both `id` and `htmlFor` <br/>
 
-        <input id ={ageInput} > and <label htmlFor={ageInput}>. 
+        <input id ={ageInput same as htmlFor} > and <label htmlFor={ageInput same as id}>. 
 
 #### To Specify an Initial Value for an input use 
         
         defaultValue="Some initial value"
 #### To Read the input values when submitting a form
 
-        Add a <form> around <inputs/> within the form add a submit button
+        Add a <form> around <inputs/> and a submit button as below
                 <button type="submit">Submit form</button>. 
                 
 The button will call the `<form onSubmit>` event handler (below example it is handleSubmit). 
 
         --> <form method="post" onSubmit={handleSubmit}>
+                <input/>
+                <button type="submit">Submit Form</button>
             </form>
 Browser default is to send the form data to the current URL and refresh the page.
 To override this behavior call 
@@ -49,17 +52,15 @@ To override this behavior call
               
 ### useState, Objects in State, Setting state from a Prevstate, Initialize State
 
-        const [currentState, stateSetter] = useState( initialState );
-        -------------------------------------------------------------
-        InitialState     = (0)
-                         = ([array])
-                         = ({object})
-                         = ([ array: {obect}, {object}, {object} ])
-                         = (Boolean)
+        const [currentState, stateSetter] = useState( initialState );              InitialState  = (0)
+                                                                                                 = ([array])
+                                                                                                 = ({object})
+                                                                                                 = ([ array: {obect}, {object}, {object} ])
+                                                                                                 = (Boolean)
 
-CurrentState - current state value <br />
+currentState - current state value <br />
 initialState - initializes the VALUE of the state at first render <br />
-stateSetter - Funciton changes state <br />
+stateSetter - Function to change state <br />
 
 ### Function Component Effects
 The useEffect() function has no return value as the Effect Hook is used to call another function. We pass the callback function, or effect, to run after a component renders as the argument of the useEffect() function. 
@@ -86,12 +87,13 @@ Second Argument is an array which determines when the effect runs
     
 ### Control When Hooks are Called
 Dependency array is used to schedule or configure when our effect is called in the following ways:
-useEffect(()=>{callback}, [array]);
+useEffect(()=>{callback}, [D.array]);
 
         Dependency Array	        Effect called after first render & …
+        ----------------                -----------------------------------
         undefined	                every re-render
         Empty array	                no re-renders
-        Non-empty array	            when any value in the dependency array changes
+        Variable	                when value in the dependency array changes
 
 ### Fetch of the menu data
 
