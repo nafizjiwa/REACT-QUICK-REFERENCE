@@ -254,4 +254,26 @@ import styles first like from `"./App.module.css";` --- go to file App.module.cs
                 </>
 
 
+#### Initial State and Set Function
+useState prefers working with direct values—like strings, numbers, or Booleans—over nested objects. However, when dealing with objects and arrays, remember the spread syntax or object spread syntax to maintain immutability:
+
+        const [userProfile, setUserProfile] = useState({ name: 'Anonymous', age: 0 });
+        
+        function updateName(newName) {
+         setUserProfile(prevProfile => ({
+           ...prevProfile,
+           name: newName,
+         }));
+        } 
+Employing the spread syntax to ensure we're updating the nested object correctly, (useState does not update objects compared to class components) </br>
+
+Importantly, if you need to set the state based on the previous value, pass a function to the state updater function, which receives the current state as its argument.</br> This ensures robust updates that depend on the previous state without any missteps:</br>
+
+        const [quantity, setQuantity] = useState(0);
+
+        const increment = () => {
+         setQuantity(prevQuantity => prevQuantity + 1);
+        }; 
+
+
 
